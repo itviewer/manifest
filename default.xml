@@ -4,11 +4,15 @@
   <remote fetch="git@github.com:itviewer" name="itviewer"/>
   <!-- 注意仅 git@github.com 不可以，必须加 ssh:// -->
   <remote fetch="ssh://git@github.com" name="github"/>
-
+  <!-- 注意不是 .. -->
+  <remote fetch="." name="relative"/>
+  
   <default revision="main" remote="itviewer" sync-j="4" />
   <project path="repo1" name="repo1" />
   <!-- 重命名克隆后的目录名称，且指定 revision -->
   <project path="test2" name="repo2" revision="dev" />
   <!-- 重新组织本地路径，且指定 remote 和路径 -->
   <project path="test3/repo3" name="apieasy/repo3" remote="github" />
+  <!-- 相对路径 -->
+  <project path="repo4" name="repo4" remote="relative" />
 </manifest>
