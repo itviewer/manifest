@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote fetch="git://github.com/itviewer" name="itviewer"/>
+    <remote fetch="git@github.com:itviewer" name="itviewer"/>
     <default revision="main" remote="itviewer" sync-j="4" />
     <project path="repo1" name="repo1" />
     <project path="test2" name="repo2" revision="dev" />
