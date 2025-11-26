@@ -2,7 +2,8 @@
 <manifest>
   <!-- 注意不是 git://github.com -->
   <remote fetch="git@github.com:itviewer" name="itviewer"/>
-  <remote fetch="git@github.com" name="github"/>
+  <!-- 注意仅 git@github.com 不可以，必须加 ssh:// -->
+  <remote fetch="ssh://git@github.com" name="github"/>
 
   <default revision="main" remote="itviewer" sync-j="4" />
   <project path="repo1" name="repo1" />
