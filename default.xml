@@ -8,6 +8,7 @@
   <remote fetch="." name="relative"/>
   
   <default revision="main" remote="itviewer" sync-j="4" />
+  
   <project path="repo1" name="repo1" />
   <!-- 重命名克隆后的目录名称，且指定 revision -->
   <project path="test2" name="repo2" revision="dev" />
@@ -15,4 +16,7 @@
   <project path="test3/repo3" name="apieasy/repo3" remote="github" />
   <!-- 相对路径 -->
   <project path="repo4" name="repo4" remote="relative" />
+  <!-- LFS -->
+  <project path="repo-lfs" name="repo-lfs" />
+
 </manifest>
